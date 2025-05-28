@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPER PRESENTATION SUBMISSION PORTAL</title>
+    <link rel="stylesheet" href="/static/paper_present.css">
+</head>
+<body>
+     <header><center style="display:flex;
+                           justify-content: center;
+                           background: #fff;"><img src="/image/main_logo1.webp"><p><strong>Alagappa Government Arts College
+Karaikudi - 630 003,<br> Tamilnadu, India <br>Nationally Re-accredited With 'B' Grade by NAAC and Ranked 76th in NIRF 2024</strong></p>
+<img src="/image/main_logo2.webp" alt=""></center></header>
+    <div class="navbar">
+        <nav>
+            <ul>
+                 <li><a href="/templates/home_page.html">HOME</a></li>
+                <li><a href="/templates/sumbit_paper.html">SUBMIT PAPER</a></li>
+                <li><a href="/templates/view_submission.html">VIEW SUBMISSION</a></li>
+                <li><a href="/templates/admin_page.html">ADMIN VIEW</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>PAPER PRESENTATION SUBMISSION PORTAL</h2>
+    <h2>SUBMIT YOUR PAPER PRESENTATION DOCUMENT</h2>
+    <form method="POST">
+        <label for="name"> STUDENT NAME:</label>
+        <input type="text" id="name" name="student_name" required><br>
+        <label for="student_id">STUDENT ID:</label>
+        <input type="text" id="student_id" name="student_id" required><br>
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="college">COLLEGE NAME:</label>
+        <input type="text" id="college" name="college" required><br>
+        <label>STREAM OF STUDY:</label>
+        <select name="stream" style="font-size: large;">
+            <option value="Engineering">Engineering</option>
+            <option value="Medical">Medical</option>
+            <option value="Science">Science</option>
+            <option value="Arts">Arts</option>
+        </select><br><br>
+        <label for="course">COURSE:</label>
+        <input type="text" id="course" name="course"><br>
+        <label for="title">TITLE:</label>
+        <input type="text" id="title" name="title" required><br>
+        <label for="abstract">ABSTRACT:</label>
+        <textarea name="abstract" id="abstract" required></textarea><br>
+        <label for="link">DOCUMENT LINK:</label>
+        <input type="url" name="doc_link" required><br>
+        <button type="submit">SUBMIT:</button>
+    </form>
+    <center><footer><br>THANK YOU <br> @2025 alagappa govt. arts college,kkdi </footer></center>
+</body>
+</html>
