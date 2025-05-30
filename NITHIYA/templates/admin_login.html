@@ -1,0 +1,53 @@
+<!-- login2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <style>
+    body {
+      background-image: url('/image/back.jpg'); /* Use a tech-style background */
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-form {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 320px;
+    }
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .login-form button {
+      background-color: red;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      border: none;
+    }
+    .captcha {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <form class="login-form">
+    <h2>Admin Login</h2>
+    <input type="text" placeholder="Type Username or Email">
+    <input type="password" placeholder="Type Password">
+    <div class="captcha">
+      <input type="checkbox"> I'm not a robot
+    </div>
+    <label><input type="checkbox"> Remember Me</label>
+    <button type="submit">Log In</button>
+  </form>
+</body>
+</html>

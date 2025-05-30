@@ -1,0 +1,80 @@
+<!-- paper_steps.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paper Submission Steps</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .step-card {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .step-card:hover {
+      transform: translateY(-5px);
+    }
+    .step-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .step-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .step-desc {
+      font-size: 14px;
+      color: #444;
+    }
+    .step-link {
+      display: block;
+      color: red;
+      margin-top: 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .step-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Step 2 - Check Status -->
+  <div class="step-card" onclick="window.location.href='check_status.html'">
+    <div class="step-icon">📝</div>
+    <div class="step-title">PEER REVIEW PROCESS</div>
+    <div class="step-desc">
+      <strong>Step 2 :</strong> Peer Review of your paper within 2 days.<br>
+      You will get your Acceptance OR Rejection<br>
+      Notification through Email and SMS.
+      <a class="step-link">Check Paper Status</a>
+    </div>
+  </div>
+
+  <!-- Step 3 - Pay Fees -->
+  <div class="step-card" onclick="window.location.href='pay_fees.html'">
+    <div class="step-icon">💳</div>
+    <div class="step-title">PAY FEES ONLINE</div>
+    <div class="step-desc">
+      <strong>Step 3 :</strong> Pay publication charges. Download and<br>
+      fill the Copyright Form and Undertaking Form<br>
+      available in Author Home.
+      <a class="step-link">Pay Fees Online</a>
+    </div>
+  </div>
+
+</body>
+</html>
