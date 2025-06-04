@@ -22,8 +22,26 @@
             </ul>
         </nav>
     </div>
-    <center><h2>PAPER PRESENTATION EVENT</h2>
-    <img src="/image/logo3.webp" width="50" height="50"></center>
+    <center><h2>PAPER PRESENTATION EVENT</h2></center>
+      <main>
+           <br><br>
+            <section>
+                <center>
+                    <img class="myslides" src="/image/iit.jpg" height="600px" width="1000px">
+                    <img class="myslides" src="/image/iit2.webp" height="600px" width="1000px">
+                    <img class="myslides" src="/image/iit3.avif" height="600px" width="1000px">
+                    <img class="myslides" src="/image/first.webp" height="600px" width="1000px">
+                </center>
+            </section>
+            <br>
+            <br>
+            <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="/video/video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+        </main>
     <div class="home">
       <div class="step-card" onclick="window.location.href='/templates/instructions.html'">
     <div class="step-icon">💳</div>
@@ -58,6 +76,21 @@ document.querySelectorAll('.step-card').forEach(card => {
         card.style.backgroundColor = "#fff";
     });
 });
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("myslides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
 </script>
 
 </body>
