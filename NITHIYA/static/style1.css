@@ -155,6 +155,7 @@ footer a {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 600px;
+            text-align: left;
         }
 
         label {
@@ -222,4 +223,16 @@ footer a {
   min-height: 100%;
   object-fit: cover;
 }
-
+.about-us{
+   section{ background-color: #f4f4f9;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;   
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+}
